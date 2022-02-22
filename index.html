@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | MTR Crime Scene</title>
+    <title>Unity WebGL Player | Bloodstain Lounge</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">MTR Crime Scene</div>
+        <div id="unity-build-title">Bloodstain Lounge</div>
       </div>
     </div>
     <script>
@@ -56,14 +56,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/MTR Crime Scene WebGL.loader.js";
+      var loaderUrl = buildUrl + "/Bloodstain Lounge WebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/MTR Crime Scene WebGL.data.unityweb",
-        frameworkUrl: buildUrl + "/MTR Crime Scene WebGL.framework.js.unityweb",
-        codeUrl: buildUrl + "/MTR Crime Scene WebGL.wasm.unityweb",
+        dataUrl: buildUrl + "/Bloodstain Lounge WebGL.data.gz",
+        frameworkUrl: buildUrl + "/Bloodstain Lounge WebGL.framework.js.gz",
+        codeUrl: buildUrl + "/Bloodstain Lounge WebGL.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "HKU TELI",
-        productName: "MTR Crime Scene",
+        productName: "Bloodstain Lounge",
         productVersion: "0.1",
         showBanner: unityShowBanner,
       };
@@ -95,8 +95,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
       }
 
       loadingBar.style.display = "block";
